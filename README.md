@@ -1,7 +1,7 @@
 # SOC Analyst Hands-On Labs Portfolio
 
 ## Overview
-This repository contains hands-on Security Operations Center (SOC) labs completed as part of a structured 30-day SOC analyst roadmap. The projects focus on real world alert monitoring, log analysis, threat detection, incident investigation, and professional SOC documentation aligned with entry-level and remote SOC analyst roles.
+This repository contains hands-on Security Operations Center (SOC) labs designed to demonstrate practical skills in alert monitoring, log analysis, incident investigation, and professional SOC documentation. These labs are aligned with entry-level and real-world SOC analyst responsibilities and remote SOC team workflows. 
 
 ## Objectives
 - Develop practical SOC Tier 1 investigation skills
