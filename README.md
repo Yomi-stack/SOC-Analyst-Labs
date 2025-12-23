@@ -1,7 +1,7 @@
 # SOC Analyst Hands-On Labs
 
 ## Overview
-This repository contains hands-on Security Operations Center (SOC) labs designed to demonstrate practical skills in alert monitoring, log analysis, incident investigation, and documentation. These labs are aligned with real-world SOC analyst responsibilities and remote SOC team workflows.
+This repository contains hands-on Security Operations Center (SOC) labs designed to demonstrate practical skills in alert monitoring, log analysis, incident investigation, and documentation. These labs are aligned with real world SOC analyst responsibilities and remote SOC team workflows.
 
 ## Skills Demonstrated
 - SIEM Monitoring & Alert Investigation
@@ -32,6 +32,7 @@ Each lab includes:
 - Final verdict and lessons learned
 
 ## Labs
+- SOC Overview & Lab Setup
 - Windows Log Analysis & Failed Login Detection
 - SSH & RDP Brute Force Detection
 - PowerShell Suspicious Activity Detection
@@ -48,7 +49,7 @@ All investigations follow a SOC-style documentation format:
 - Conclusion & Recommendations
 
 ## About Me
-Aspiring SOC Analyst with hands-on experience in security monitoring, incident investigation, and threat detection. Actively building a portfolio focused on real-world SOC scenarios and remote security operations.
+Aspiring SOC Analyst with hands-on experience in security monitoring, incident investigation, and threat detection. Actively building a portfolio focused on real world SOC scenarios and remote security operations.
 
 ---
 📌 This repository is continuously updated as part of ongoing SOC analyst training.
