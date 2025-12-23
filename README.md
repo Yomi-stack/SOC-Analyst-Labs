@@ -67,4 +67,8 @@ Each lab folder includes:
 - Final verdict and recommendations
 - Lessons learned
 
-## Repository Structure
+## About Me
+Aspiring SOC Analyst with hands-on experience in security monitoring, incident investigation, and threat detection. Actively building a portfolio focused on real-world SOC scenarios and remote security operations.
+
+---
+📌 This repository is continuously updated as part of ongoing SOC analyst training.
