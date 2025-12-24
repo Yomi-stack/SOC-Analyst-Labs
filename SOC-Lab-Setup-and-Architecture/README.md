@@ -21,6 +21,28 @@ The lab consists of a Windows endpoint and a Linux server configured to forward 
 - Installed Wazuh agent on Windows endpoint
 - Verified log ingestion and agent connectivity
 
+ ## Implementation & Verification
+
+### 1. Wazuh Service Status
+Verified that the Wazuh Manager, Indexer, and Dashboard services are all active and running on the Ubuntu server.
+![Wazuh Services](./Wazuh-services-status.png)
+
+### 2. Dashboard Access
+Successfully accessed the Wazuh Web UI via the server's static IP address.
+![Wazuh UI Access](./Wazuh-UI-%20access.png)
+
+### 3. Pre-Deployment State
+The dashboard view prior to agent installation, showing no active endpoints.
+![Dashboard Before](./Wazuh-dashboard%20-before-agent%20-deployed.png)
+
+### 4. Agent Connectivity
+Confirmed that the Windows 11 endpoint (WinClient) is successfully communicating with the manager and appearing as "Active."
+![Active Agent](./Wazuh-active-agent.png)
+
+### 5. Final Overview & Log Ingestion
+The manager is now actively parsing security events and displaying telemetry on the main dashboard.
+![Dashboard After](./Wazuh-dashbaord-overview-after-deployment.png)
+
 ## Data Flow
 1. Security events occur on the Windows endpoint
 2. Logs are collected by the Wazuh agent
