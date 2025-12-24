@@ -29,8 +29,8 @@ This event is generated when a user successfully logs on.
 
 *Screenshots:*
 
-![4624 in Event Viewer](EV_4624_success.png)  
-![4624 in Wazuh](Wazuh_4624_success.png)
+![4624 in Event Viewer](./EV_4624_success.png)  
+![4624 in Wazuh](./Wazuh_4624_success.png)
 
 ---
 
@@ -46,8 +46,8 @@ This event is generated when a logon attempt fails.
 
 *Screenshots:*
 
-![4625 in Event Viewer](screenshots/EV_4625_failure.png)  
-![4625 in Wazuh](screenshots/Wazuh_4625_failure.png)
+![4625 in Event Viewer](./EV_4625_failure.png)  
+![4625 in Wazuh](./Wazuh_4625_failure.png)
 
 ---
 
@@ -63,8 +63,8 @@ This event is generated when a new process is created.
 
 *Screenshots:*
 
-![4688 in Event Viewer](screenshots/EV_4688_process.png)  
-![4688 in Wazuh](screenshots/Wazuh_4688_process.png)
+![4688 in Event Viewer](./EV_4688_process.png)  
+![4688 in Wazuh](./Wazuh_4688_process.png)
 
 ---
 
