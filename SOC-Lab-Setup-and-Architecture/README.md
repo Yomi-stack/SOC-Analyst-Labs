@@ -11,6 +11,7 @@ To design and deploy a functional Security Operations Center (SOC) lab environme
 
 ## Architecture Overview
 The lab consists of a Windows endpoint and a Linux server configured to forward logs to a centralized SIEM. The SIEM collects, analyzes, and generates alerts based on security events occurring within the environment.
+![Architecture](./SOC%320LAB.png)
 
 ## Setup Summary
 - Installed virtualization software
