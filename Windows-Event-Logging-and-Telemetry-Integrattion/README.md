@@ -29,8 +29,8 @@ This event is generated when a user successfully logs on.
 
 *Screenshots:*
 
-![4624 in Event Viewer](screenshots/EV_4624_success.png)  
-![4624 in Wazuh](screenshots/Wazuh_4624_success.png)
+![4624 in Event Viewer](EV_4624_success.png)  
+![4624 in Wazuh](Wazuh_4624_success.png)
 
 ---
 
