@@ -22,7 +22,7 @@ This repository contains hands-on Security Operations Center (SOC) labs designed
 - MITRE ATT&CK Framework
 
 ## Lab Environment
-- Windows 10 Virtual Machine
+- Windows 11 Virtual Machine
 - Ubuntu Linux Virtual Machine
 - Centralized logging via Wazuh
 - Attack simulations performed in a controlled lab environment
