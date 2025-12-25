@@ -28,7 +28,7 @@ and configured on the Windows 11 virtual machine.
 Sysmon logs are actively being generated and recorded in the
 Microsoft-Windows-Sysmon/Operational log.
 
-![Sysmon Operational Log](screenshots/Sysmon_operational_log.png)
+![Sysmon Operational Log](screenshots/Sysmon_Operational_Log.png)
 
 ## Sysmon Logs in Wazuh SIEM
 
