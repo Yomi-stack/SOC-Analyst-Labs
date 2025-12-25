@@ -1,4 +1,4 @@
-<img width="1161" height="835" alt="sysmon_analyze_event_id" src="https://github.com/user-attachments/assets/a9e63223-5a83-497f-adf8-1a815b842f67" /># Sysmon Installation and Log Review
+# Sysmon Installation and Log Review
 
 ## Objective
 Enhance Windows log visibility by installing Sysmon and analyzing detailed
