@@ -1,4 +1,4 @@
-# Sysmon Installation and Log Review
+<img width="1161" height="835" alt="sysmon_analyze_event_id" src="https://github.com/user-attachments/assets/a9e63223-5a83-497f-adf8-1a815b842f67" /># Sysmon Installation and Log Review
 
 ## Objective
 Enhance Windows log visibility by installing Sysmon and analyzing detailed
@@ -50,4 +50,55 @@ Sysmon recorded a network connection initiated by a process.
 
 ![Sysmon Event ID 3](screenshots/event_id_3_showing_network_connection.png)
 
+# Sysmon Installation & Analysis
 
+## Overview
+Brief explanation of why Sysmon is used in SOC environments.
+
+## Sysmon Installation & Configuration
+- Sysmon installed on Windows 11 VM
+- Configuration file used: sysmon_config.xml
+
+## Sysmon Event Analysis
+
+### Sysmon Event ID 1 – Process Creation
+![Sysmon Event ID 1 – Process Creation](screenshots/sysmon_analyze_event_id.png)
+Sysmon Event ID 1 records every process created on the system, 
+including full command-line arguments, parent process, and file hashes.
+
+Example observed:
+- Process: whoami.exe
+- CommandLine: "C:\Windows\System32\whoami.exe"
+- Parent Process: powershell.exe
+- User: WINDOWS11\Yomi
+
+This level of visibility is not available in standard Windows Event ID 4688.
+
+### Sysmon Event ID 3 – Network Connection
+![Sysmon Event ID 3 – Network_Connection](screenshots/sysmon_network_connection.png)
+Sysmon Event ID 3 records every process created on the system, 
+including source ip/port, destination ip/port, and protocol
+
+### Sysmon Event ID 3 – Network Connection
+
+Sysmon Event ID 3 captures network connections initiated by processes,
+including source and destination IPs, ports, and protocol details.
+
+Observed event:
+- Process: Microsoft.SharePoint.exe
+- Source IP: 10.0.2.15
+- Destination IP: 104.208.16.88
+- Destination Port: 443 (HTTPS)
+- Protocol: TCP
+- User: WINDOWS11\Yomi
+
+This activity was identified as legitimate outbound traffic associated
+with Microsoft OneDrive/SharePoint services. Sysmon Event ID 3 is critical
+for detecting suspicious outbound connections, command-and-control (C2)
+activity, and unauthorized data exfiltration.
+
+## Sysmon vs Windows Event Logs
+Comparison table and explanation.
+
+## Key Takeaways
+What you learned and why this matters in a SOC.
