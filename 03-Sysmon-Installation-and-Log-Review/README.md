@@ -106,5 +106,65 @@ Compare default Windows Security logs with Sysmon logs to highlight the differen
 - Sysmon provides more detailed and persistent logging.
 - Useful for SOC monitoring, threat hunting, and forensic analysis.
 
-## Key Takeaways
-What you learned and why this matters in a SOC.
+
+# Key Takeaways: Sysmon Installation and Windows Log Review
+
+This project demonstrates the end-to-end workflow for a SOC analyst. Configuring advanced endpoint logging, centralizing logs in a SIEM, validating alerts, and documenting findings.
+
+---
+
+## 1. Installing and Configuring Sysmon
+*What:* Installed Sysmon on Windows to provide detailed, persistent logging (process creation, network connections, file changes, driver loads, etc.).  
+*Why it matters in SOC:*  
+- Provides high fidelity logs that default Windows logs cannot capture.  
+- Essential for detecting malicious activity and performing forensic investigations.  
+- Enables tracking of malware execution, lateral movement, and persistence techniques.
+
+---
+
+## 2. Forwarding Logs to Wazuh
+*What:* Configured the Windows agent to forward both Sysmon and Windows Security logs to Wazuh Manager and validated log ingestion.  
+*Why it matters in SOC:*  
+- Centralized logging is critical for monitoring multiple endpoints efficiently.  
+- Enables real-time alerting, event correlation, and investigation in a SIEM.  
+- Ensures SOC analysts can detect threats across systems proactively.
+
+---
+
+## 3. Basic Alert Investigation
+*What:* Triggered test events (failed logins, process creation, file changes) and verified alerts in Wazuh.  
+*Why it matters in SOC:*  
+- Confirms the logging and alerting setup is functioning correctly.  
+- Provides hands-on experience investigating alerts, understanding severity, and tracking context.  
+- Demonstrates early detection of suspicious activity.
+
+---
+
+## 4. Comparing Sysmon vs Windows Event Logs
+*What:* Compared Windows Security logs with Sysmon logs using CSV exports and tables.  
+*Why it matters in SOC:*  
+- Highlights the *enhanced visibility* Sysmon provides.  
+- Shows which critical events are missing from default logs.  
+- Helps SOC analysts prioritize what events to monitor for effective alerting.
+
+---
+
+## 5. Documentation and Reporting
+*What:* Exported logs to CSV, created Markdown files with tables, screenshots, and observations.  
+*Why it matters in SOC:*  
+- Clear documentation supports incident reporting, audits, and compliance.  
+- Makes it easier to review incidents, reproduce findings, and onboard team members.  
+
+---
+
+## 6. Overall SOC Relevance
+- *Visibility:* Sysmon + Wazuh gives analysts detailed insight into endpoint activities.  
+- *Alerting:* Enables actionable alerts for suspicious behavior.  
+- *Investigation:* Detailed logs aid root cause analysis and incident response.  
+- *Reporting:* Structured documentation allows clear communication of findings.  
+- *Skill Development:* Hands-on experience with logging, SIEM integration, and alert investigation is foundational for SOC operations.
+
+---
+
+*Summary Statement:*  
+> This project illustrates the full SOC workflow: from endpoint logging (Sysmon) to centralized SIEM monitoring (Wazuh), alert validation, and documentation. Mastery of these steps equips a SOC analyst to detect, investigate, and respond to cyber threats effectively.
