@@ -42,12 +42,12 @@ into the Wazuh SIEM for centralized monitoring and analysis.
 The screenshot below shows a Sysmon Event ID 1 capturing process creation
 with full command-line details.
 
-![Sysmon Event ID 1](screenshots/event_id_1_process_creation.png)
+![Sysmon Event ID 1](screenshots/Sysmon_event_id_1_process_creation.png)
 
 ## Sysmon Event ID 3 – Network Connection
 
 Sysmon recorded a network connection initiated by a process.
 
-![Sysmon Event ID 3](screenshots/event_id_3_showing__network_connection.png)
+![Sysmon Event ID 3](screenshots/Sysmon_event_id_3_showing__network_connection.png)
 
 
