@@ -28,7 +28,7 @@ and configured on the Windows 11 virtual machine.
 Sysmon logs are actively being generated and recorded in the
 Microsoft-Windows-Sysmon/Operational log.
 
-![Sysmon Operational Log](screenshots/Sysmon_Operational_Log.png)
+![Sysmon Operational Log](screenshots/Sysmon_Operational_log.png)
 
 ## Sysmon Logs in Wazuh SIEM
 
@@ -42,7 +42,7 @@ into the Wazuh SIEM for centralized monitoring and analysis.
 The screenshot below shows a Sysmon Event ID 1 capturing process creation
 with full command-line details.
 
-![Sysmon Event ID 1](screenshots/sysmon_event_id_1_process_creation.png)
+![Sysmon Event ID 1](screenshots/event_id_1_process_creation.png)
 
 ## Sysmon Event ID 3 – Network Connection
 
