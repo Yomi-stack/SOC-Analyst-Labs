@@ -14,16 +14,10 @@ Sysmon provided richer telemetry including process command-line arguments,
 hashes, and network connection details that are not available in standard
 Windows logs.
 
-# Sysmon Installation and Log Review
 
-## Overview
-Brief explanation of why Sysmon is used in SOC environments.
-
-## Sysmon Installation & Configuration
+## Sysmon Installation & Configuration Verification
 - Sysmon installed on Windows 11 VM
 - Configuration file used: sysmonconfig-export.xml
-  
-## Sysmon Installation Verification
 
 The screenshot below confirms that Sysmon was successfully installed
 and configured on the Windows 11 virtual machine.
