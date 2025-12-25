@@ -74,13 +74,9 @@ Example observed:
 
 This level of visibility is not available in standard Windows Event ID 4688.
 
+
 ### Sysmon Event ID 3 – Network Connection
 ![Sysmon Event ID 3 – Network_Connection](screenshots/sysmon_network_connection.png)
-Sysmon Event ID 3 records every process created on the system, 
-including source ip/port, destination ip/port, and protocol
-
-### Sysmon Event ID 3 – Network Connection
-
 Sysmon Event ID 3 captures network connections initiated by processes,
 including source and destination IPs, ports, and protocol details.
 
@@ -98,7 +94,27 @@ for detecting suspicious outbound connections, command-and-control (C2)
 activity, and unauthorized data exfiltration.
 
 ## Sysmon vs Windows Event Logs
-Comparison table and explanation.
+# Sysmon vs Windows Event Logs
+
+## Purpose
+Compare default Windows Security logs with Sysmon logs to highlight the differences in granularity.
+
+## Comparison Table
+
+| Feature/Event      | Windows Security Log | Sysmon Log                 | Notes |
+|--------------------|----------------------|----------------------------|-------|
+| Process Creation   | Event ID 4688        | Event ID 1                 | Sysmon shows parent/child info and command line |
+| Network Connection | Limited              | Event ID 3                 | Windows logs don’t track every connection |
+| File Changes       | Limited              | Event ID 11                | Sysmon can track specific folders/files |
+| Driver Load        | Event ID 6, 7035     | Event ID 6                 | Sysmon is more persistent |
+
+## Sample Logs
+- [Windows Security Logs CSV](../windows_logs.csv)  
+- [Sysmon Logs CSV](../sysmon_logs.csv)
+
+## Observations
+- Sysmon provides more detailed and persistent logging.
+- Useful for SOC monitoring, threat hunting, and forensic analysis.
 
 ## Key Takeaways
 What you learned and why this matters in a SOC.
