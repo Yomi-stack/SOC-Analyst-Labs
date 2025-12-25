@@ -21,14 +21,14 @@ Windows logs.
 The screenshot below confirms that Sysmon was successfully installed
 and configured on the Windows 11 virtual machine.
 
-![Sysmon Installation](screenshots/sysmon_installation_confirmation.png)
+![Sysmon Installation](screenshots/Sysmon_installation_confirmation.png)
 
 ## Sysmon Log Generation
 
 Sysmon logs are actively being generated and recorded in the
 Microsoft-Windows-Sysmon/Operational log.
 
-![Sysmon Operational Log](screenshots/sysmon_operational_log.png)
+![Sysmon Operational Log](screenshots/Sysmon_operational_log.png)
 
 ## Sysmon Logs in Wazuh SIEM
 
@@ -49,3 +49,6 @@ with full command-line details.
 Sysmon recorded a network connection initiated by a process.
 
 ![Sysmon Event ID 3](screenshots/sysmon_event_id_3_network_connection.png)
+
+![Sysmon Event ID 3](screenshots/sysmon_event_id_3_network_connection.png)
+
