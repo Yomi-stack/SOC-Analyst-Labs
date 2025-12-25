@@ -99,8 +99,8 @@ Compare default Windows Security logs with Sysmon logs to highlight the differen
 | Network Connection | Limited              | Event ID 3                 | Windows logs don’t track every connection |
 
 ## Sample Logs
-- [Windows Security Logs CSV](../windows_logs.csv)  
-- [Sysmon Logs CSV](../sysmon_logs.csv)
+- [Windows Security Logs CSV](comparisons/windows_logs.csv)  
+- [Sysmon Logs CSV](comparisons/sysmon_logs.csv)
 
 ## Observations
 - Sysmon provides more detailed and persistent logging.
