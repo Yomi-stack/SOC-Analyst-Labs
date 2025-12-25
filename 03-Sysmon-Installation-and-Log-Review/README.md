@@ -48,6 +48,6 @@ with full command-line details.
 
 Sysmon recorded a network connection initiated by a process.
 
-![Sysmon Event ID 3](screenshots/Sysmon_event_id_3_showing__network_connection.png)
+![Sysmon Event ID 3](screenshots/event_id_3_showing__network_connection.png)
 
 
