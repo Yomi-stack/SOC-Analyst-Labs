@@ -16,6 +16,13 @@ Windows logs.
 
 # Sysmon Installation and Log Review
 
+## Overview
+Brief explanation of why Sysmon is used in SOC environments.
+
+## Sysmon Installation & Configuration
+- Sysmon installed on Windows 11 VM
+- Configuration file used: sysmonconfig-export.xml
+  
 ## Sysmon Installation Verification
 
 The screenshot below confirms that Sysmon was successfully installed
@@ -50,14 +57,6 @@ Sysmon recorded a network connection initiated by a process.
 
 ![Sysmon Event ID 3](screenshots/event_id_3_showing_network_connection.png)
 
-# Sysmon Installation & Analysis
-
-## Overview
-Brief explanation of why Sysmon is used in SOC environments.
-
-## Sysmon Installation & Configuration
-- Sysmon installed on Windows 11 VM
-- Configuration file used: sysmon_config.xml
 
 ## Sysmon Event Analysis
 
@@ -94,7 +93,6 @@ for detecting suspicious outbound connections, command-and-control (C2)
 activity, and unauthorized data exfiltration.
 
 ## Sysmon vs Windows Event Logs
-# Sysmon vs Windows Event Logs
 
 ## Purpose
 Compare default Windows Security logs with Sysmon logs to highlight the differences in granularity.
@@ -105,8 +103,6 @@ Compare default Windows Security logs with Sysmon logs to highlight the differen
 |--------------------|----------------------|----------------------------|-------|
 | Process Creation   | Event ID 4688        | Event ID 1                 | Sysmon shows parent/child info and command line |
 | Network Connection | Limited              | Event ID 3                 | Windows logs don’t track every connection |
-| File Changes       | Limited              | Event ID 11                | Sysmon can track specific folders/files |
-| Driver Load        | Event ID 6, 7035     | Event ID 6                 | Sysmon is more persistent |
 
 ## Sample Logs
 - [Windows Security Logs CSV](../windows_logs.csv)  
