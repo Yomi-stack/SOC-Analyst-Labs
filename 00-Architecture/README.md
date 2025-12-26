@@ -2,6 +2,8 @@
 
 This folder documents the evolution of my SOC home lab architecture.
 
+
+
 ## Initial SOC Lab Architecture
 This architecture represents the initial setup focused on log collection
 and analysis using Windows endpoints and Wazuh SIEM.
