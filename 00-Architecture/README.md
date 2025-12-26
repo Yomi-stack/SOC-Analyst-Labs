@@ -6,7 +6,7 @@ This folder documents the evolution of my SOC home lab architecture.
 This architecture represents the initial setup focused on log collection
 and analysis using Windows endpoints and Wazuh SIEM.
 
-![Initial Architecture](SOC_Lab.png)
+![Initial Architecture](Architecture/SOC_Lab.png)
 
 ## Detection & Threat Simulation Architecture
 This updated architecture introduces an attack simulation VM (Kali Linux)
