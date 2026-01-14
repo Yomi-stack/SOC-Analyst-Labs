@@ -10,6 +10,7 @@ and malware alerts, mapped to the MITRE ATT&CK framework.
 ## Environment
 - Ubuntu Linux (SSH, Wazuh Manager)
 - Windows 11 (Wazuh Agent, Sysmon)
+- Kali Linux (Attacking Machine)
 - Wazuh SIEM
 - MITRE ATT&CK
 
@@ -21,7 +22,24 @@ and malware alerts, mapped to the MITRE ATT&CK framework.
 - Detected brute-force behavior using Wazuh rules
 - MITRE ATT&CK: T1110
 
-📸 Screenshot: /Screenshots/ssh_bruteforce.png
+## Attack Simulation
+- Enabled SSH service on Ubuntu
+- Performed repeated failed SSH login attempts from Kali Linux using invalid credentials
+- Generated multiple authentication failures in /var/log/auth.log
+
+📸 Screenshots:
+![SSH_ENABLE](Screenshots/Enabling_SSH_on_Ubuntu.png)
+![Attack](Screenshots/Attacking_Machine.png)
+![VAR](Screenshots/var_log.png)
+
+## Detection & Analysis
+- Monitored Linux authentication logs via Wazuh agent
+- Detected brute-force behavior through Wazuh correlation rules
+- Alert mapped to MITRE ATT&CK technique T1110 (Brute Force)
+
+📸 Screenshots:
+![wazuh](Screenshots/wazuh_alert_ssh.png)
+![mitre](Screenshots/Mitre_Attack.png)
 
 ---
 
@@ -30,7 +48,10 @@ and malware alerts, mapped to the MITRE ATT&CK framework.
 - Analyzed Event ID 4625
 - Detected brute-force behavior in Wazuh
 
-📸 Screenshot: /Screenshots/windows_bruteforce.png
+📸 Screenshots:
+![Auth](Screenshots/logon_4625.png)
+![Wazuh](Screenshots/wazuh_4625.png)
+![T15](Screenshots/T153.png)
 
 ---
 
@@ -40,7 +61,9 @@ and malware alerts, mapped to the MITRE ATT&CK framework.
 - Investigated activity in Wazuh SIEM
 - MITRE ATT&CK: T1059.001
 
-📸 Screenshot: /Screenshots/powershell_abuse.png
+📸 Screenshot: 
+![sysmon](Screenshots/sysmon_log.png)
+![pshell](Screenshots/wazuh_pshell.png)
 
 ---
 
@@ -50,7 +73,13 @@ and malware alerts, mapped to the MITRE ATT&CK framework.
 - Verified malware alert ingestion into Wazuh
 - MITRE ATT&CK: T1204
 
-📸 Screenshot: /Screenshots/eicar_detection.png
+📸 Screenshot:
+![operation](Screenshots/operation.png)
+![orotect](Screenshots/protection.png)
+![defender](Screenshots/defender.png)
+![malware](Screenshots/malware.png)
+
+
 
 ---
 
