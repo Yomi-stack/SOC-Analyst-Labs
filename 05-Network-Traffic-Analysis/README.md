@@ -43,7 +43,7 @@ Applied filter: dns - Showing only DNS packets
 
 #### Step 2: Statistical Overview
 
-![DNS Statistics](screenshots/03-dns-statistics.png)
+![DNS Statistics](screenshots/03-dns-statistic-view.png)
 Statistics → DNS showing all queried domains with frequency counts
 
 *Domains Observed*:
@@ -157,7 +157,7 @@ Detailed view of HTTP traffic to 239.255.255.250 - SSDP multicast traffic
 
 #### Step 4: User-Agent Analysis
 
-![User-Agent String](screenshots/10-http-user-agent.png)
+![User-Agent String](screenshots/10-http-user-agent-.png)
 Examining User-Agent header from HTTP request packet details
 
 *User-Agent Observed*: Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; WOW64; Trident/4.0; SLCC2; .NET CLR 2.0.50727; .NET4.OC; .NET4.0E) 
